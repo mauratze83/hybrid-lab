@@ -8,7 +8,7 @@ const artikel = defineCollection({
     description: z.string().max(170),
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
-    category: z.enum(['Laufen', 'Rad', 'Schwimmen', 'Triathlon', 'Ausrüstung', 'Hybrid-Training']),
+    category: z.enum(['Laufen', 'Rad', 'Schwimmen', 'Triathlon', 'Ausrüstung', 'Hybrid-Training', 'Ernährung']),
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
     // true = Artikel enthält Affiliate-Links → Hinweis wird automatisch angezeigt

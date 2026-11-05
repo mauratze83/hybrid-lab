@@ -6,7 +6,7 @@ Sprache der Seite: Deutsch, Du-Ansprache, Ich-Perspektive des Betreibers.
 ## Neuen Artikel anlegen
 - Datei `src/content/artikel/<slug>.md` (Slug = URL, kleingeschrieben, Bindestriche, keine Umlaute).
 - Frontmatter (Schema in `src/content.config.ts`): `title`, `description` (≤170 Zeichen, SEO), `date`, `category`
-  (Laufen | Rad | Schwimmen | Triathlon | Ausrüstung | Hybrid-Training), `tags`, optional `affiliate: true`, `draft: true`.
+  (Laufen | Rad | Schwimmen | Triathlon | Ausrüstung | Hybrid-Training | Ernährung), `tags`, optional `affiliate: true`, `draft: true`.
 - Struktur: kurzer Einstieg, H2-Abschnitte, Fazit. Keine Produkterfahrungen erfinden – nur behaupten, was der Betreiber selbst getestet hat.
 
 ## Amazon-Links
@@ -17,3 +17,7 @@ Sprache der Seite: Deutsch, Du-Ansprache, Ich-Perspektive des Betreibers.
 
 ## Prüfen & veröffentlichen
 `npm run build` muss fehlerfrei durchlaufen; Push auf `main` deployt automatisch.
+
+## Gesundheit & Supplements
+- Nur von der EU zugelassene Health Claims verwenden (HCVO); keine Heil-, Leistungs- oder Wirkversprechen darüber hinaus.
+- Bei Nahrungsergänzungsmitteln immer Hinweis auf BfR-Höchstmengen und ärztliche Abklärung; keine persönlichen Dosierungsempfehlungen.
