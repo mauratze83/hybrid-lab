@@ -10,6 +10,8 @@
   --accent: #c8f04b;      /* Lab-Lime */
   --accent-ink: #14181f;
   --link: #2d5bd8;
+  --hl-ink: var(--ink);
+  --hl-line: #9cc21f;
   --radius: 14px;
   --max: 1120px;
   --prose: 70ch;
@@ -26,6 +28,8 @@
     --ink-2: #a5abb5;
     --line: #2a303a;
     --link: #8fb0ff;
+    --hl-ink: #c8f04b;
+    --hl-line: #c8f04b;
     color-scheme: dark;
   }
 }
@@ -64,7 +68,9 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.15; letter-spacing: -0.
 .hero { padding: 72px 0 48px; }
 .eyebrow { font-family: var(--display); font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-2); }
 .hero h1 { font-size: clamp(2.3rem, 6vw, 4rem); margin: 12px 0 18px; max-width: 16ch; }
-.hero h1 mark { background: linear-gradient(transparent 58%, var(--accent) 58%); color: inherit; padding: 0 .08em; }
+.hero h1 .hl { position: relative; display: inline-block; color: var(--hl-ink); }
+.hero h1 .pulse { position: absolute; left: 0; right: 0; bottom: -0.2em; width: 100%; height: 0.44em; overflow: visible; }
+.hero h1 .pulse path { fill: none; stroke: var(--hl-line); stroke-width: 6px; stroke-linecap: round; stroke-linejoin: round; }
 .hero p { font-size: 1.15rem; color: var(--ink-2); max-width: 56ch; margin: 0; }
 .pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
 .pill { border: 1px solid var(--line); border-radius: 99px; padding: 5px 14px; font-size: .88rem; color: var(--ink-2); text-decoration: none; background: var(--surface); }
