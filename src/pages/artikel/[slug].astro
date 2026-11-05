@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
+import { catUrl } from '../../lib/categories';
 
 export async function getStaticPaths() {
   const posts = await getCollection('artikel', ({ data }) => !data.draft);
@@ -25,7 +26,7 @@ const jsonLd = {
 <Base title={post.data.title} description={post.data.description} type="article" image={`/og/${post.id}.png`}>
   <article class="article">
     <div class="meta">
-      <span class="tag">{post.data.category}</span>
+      <a class="tag" href={catUrl(post.data.category)}>{post.data.category}</a>
       <time datetime={post.data.date.toISOString()}>{fmt.format(post.data.date)}</time>
       {post.data.updated && <span>· aktualisiert {fmt.format(post.data.updated)}</span>}
     </div>

@@ -1,0 +1,25 @@
+---
+import Base from '../../layouts/Base.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getPosts, getActiveCategories } from '../../lib/categories';
+
+export async function getStaticPaths() {
+  const cats = await getActiveCategories();
+  const posts = await getPosts();
+  return cats.map((c) => ({ params: { slug: c.slug }, props: { cat: c, posts: posts.filter((p) => p.data.category === c.name) } }));
+}
+const { cat, posts } = Astro.props;
+---
+<Base title={cat.name} description={`${cat.name}: ${cat.intro}`}>
+  <section class="hero hero-sm">
+    <div class="eyebrow">Kategorie</div>
+    <h1>{cat.name}</h1>
+    <p>{cat.intro}</p>
+  </section>
+  <p class="count">{posts.length} {posts.length === 1 ? 'Artikel' : 'Artikel'}</p>
+  <div class="grid">
+    {posts.map((p) => (
+      <ArticleCard slug={p.id} title={p.data.title} description={p.data.description} category={p.data.category} date={p.data.date} />
+    ))}
+  </div>
+</Base>

@@ -1,26 +1,41 @@
 ---
 import Base from '../layouts/Base.astro';
 import ArticleCard from '../components/ArticleCard.astro';
-import { getCollection } from 'astro:content';
+import { getPosts, getActiveCategories } from '../lib/categories';
 
-const posts = (await getCollection('artikel', ({ data }) => !data.draft))
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-const categories = [...new Set(posts.map((p) => p.data.category))];
+const posts = await getPosts();
+const latest = posts.slice(0, 5);
+const [featured, ...rest] = latest;
+const cats = await getActiveCategories();
 ---
 <Base>
   <section class="hero">
     <div class="eyebrow">Marathon · Triathlon · Ausrüstung</div>
     <h1>Training für Leute, die <span class="hl">mehr als eine<svg class="pulse" viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true"><path d="M4 22H150L178 3L216 37L242 22H396" vector-effect="non-scaling-stroke" /></svg></span> Sportart lieben.</h1>
     <p>Hybrid Lab ist mein Trainingslabor auf dem Weg vom Halbmarathon über den Marathon bis zum IRONMAN 70.3: was funktioniert, was nicht – und welche Ausrüstung sich wirklich lohnt.</p>
-    <div class="pills">
-      {categories.map((c) => <a class="pill" href={`/artikel#${c.toLowerCase()}`}>{c}</a>)}
-    </div>
   </section>
 
-  <h2 class="section-title">Neueste Artikel</h2>
-  <div class="grid">
-    {posts.slice(0, 6).map((p) => (
+  <div class="section-head">
+    <h2 class="section-title">Neueste Artikel</h2>
+    <a class="more" href="/artikel">Alle {posts.length} Artikel →</a>
+  </div>
+  {featured && (
+    <ArticleCard featured slug={featured.id} title={featured.data.title} description={featured.data.description} category={featured.data.category} date={featured.data.date} />
+  )}
+  <div class="grid grid-2">
+    {rest.map((p) => (
       <ArticleCard slug={p.id} title={p.data.title} description={p.data.description} category={p.data.category} date={p.data.date} />
+    ))}
+  </div>
+
+  <h2 class="section-title">Kategorien</h2>
+  <div class="cat-grid">
+    {cats.map((c) => (
+      <a class="cat" href={c.url}>
+        <span class="cat-name">{c.name}</span>
+        <span class="cat-intro">{c.intro}</span>
+        <span class="cat-count">{c.count} Artikel</span>
+      </a>
     ))}
   </div>
 </Base>
