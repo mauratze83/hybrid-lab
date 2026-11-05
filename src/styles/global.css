@@ -88,7 +88,9 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.15; letter-spacing: -0.
 .prose blockquote { margin: 1.5em 0; padding: 4px 20px; border-left: 4px solid var(--accent); color: var(--ink-2); }
 .prose table { width: 100%; border-collapse: collapse; font-size: .95rem; display: block; overflow-x: auto; }
 .prose th, .prose td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); }
-.prose code { background: var(--surface); border: 1px solid var(--line); padding: 1px 5px; border-radius: 5px; font-size: .9em; }
+.prose :not(pre) > code { background: var(--surface); border: 1px solid var(--line); padding: 1px 5px; border-radius: 5px; font-size: .9em; }
+.prose pre { padding: 18px 20px; border-radius: var(--radius); overflow-x: auto; font-size: .85rem; line-height: 1.55; }
+.prose pre code { background: none; border: 0; padding: 0; white-space: pre; }
 .disclosure { background: var(--surface); border: 1px dashed var(--line); border-radius: 10px; padding: 10px 14px; font-size: .85rem; color: var(--ink-2); margin: 0 0 28px; }
 
 /* Produktbox (Affiliate) */
