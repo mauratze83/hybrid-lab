@@ -24,4 +24,5 @@ Sprache der Seite: Deutsch, Du-Ansprache, Ich-Perspektive des Betreibers.
 
 ## Icons & Vorschaubilder
 - Vorschaubilder für Link-Vorschauen entstehen automatisch beim Build (`src/lib/og.ts`, `/og/<slug>.png`) – nichts manuell zu tun.
+- Logo-Set (Profilbild, Logos, Bildmarke) liegt in `public/brand/`, erzeugt mit `node scripts/brand.mjs`.
 - Favicons/App-Icons: nach Logo-Änderung `node scripts/icons.mjs` ausführen und die Dateien in `public/` committen.

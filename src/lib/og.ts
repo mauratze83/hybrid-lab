@@ -9,6 +9,7 @@ const fonts = [
   { name: 'Inter', data: f('@fontsource/inter/files/inter-latin-500-normal.woff'), weight: 500 as const },
 ];
 
+const markUri = 'data:image/svg+xml;base64,' + Buffer.from(readFileSync(new URL('../../public/brand/hybrid-lab-zeichen-lime.svg', import.meta.url))).toString('base64');
 const h = (type: string, style: Record<string, unknown>, children?: unknown) => ({ type, props: { style, children } });
 
 export async function ogImage({ title, kicker }: { title: string; kicker: string }) {
@@ -18,6 +19,7 @@ export async function ogImage({ title, kicker }: { title: string; kicker: string
     padding: '64px 72px', background: '#14181f', color: '#f6f5f1', fontFamily: 'Inter',
   }, [
     h('div', { display: 'flex', alignItems: 'center', gap: 16, fontFamily: 'Space Grotesk', fontSize: 40, fontWeight: 700 }, [
+      { type: 'img', props: { src: markUri, width: 64, height: 64 } },
       h('span', {}, 'Hybrid'),
       h('span', { background: '#c8f04b', color: '#14181f', padding: '2px 14px', borderRadius: 10 }, 'Lab'),
     ]),

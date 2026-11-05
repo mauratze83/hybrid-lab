@@ -48,6 +48,7 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.15; letter-spacing: -0.
 .site-header { border-bottom: 1px solid var(--line); background: var(--bg); position: sticky; top: 0; z-index: 10; }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
 .logo { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 700; font-size: 1.2rem; color: var(--ink); text-decoration: none; }
+.logo img { display: block; width: 34px; height: 34px; }
 .logo span { background: var(--accent); color: var(--accent-ink); padding: 1px 7px; border-radius: 6px; }
 .nav { display: flex; gap: 18px; font-size: .95rem; }
 .nav a { color: var(--ink-2); text-decoration: none; }
