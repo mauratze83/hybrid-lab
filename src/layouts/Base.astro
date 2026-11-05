@@ -1,0 +1,64 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  type?: 'website' | 'article';
+}
+
+const SITE = 'Hybrid Lab';
+const { title, description = 'Laufen, Rad, Schwimmen – ehrliche Trainingserfahrungen und Ausrüstung für Hybrid-Athleten auf dem Weg zum Marathon und Triathlon.', type = 'website' } = Astro.props;
+const fullTitle = title ? `${title} · ${SITE}` : `${SITE} – Training zwischen Marathon und Triathlon`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const nav = [
+  { href: '/artikel', label: 'Artikel' },
+  { href: '/ueber', label: 'Über' },
+];
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={SITE} />
+    <meta property="og:locale" content="de_DE" />
+    <meta name="theme-color" content="#14181f" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="logo" href="/">Hybrid <span>Lab</span></a>
+        <nav class="nav" aria-label="Hauptnavigation">
+          {nav.map((n) => (
+            <a href={n.href} aria-current={path.startsWith(n.href) ? 'page' : undefined}>{n.label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© {new Date().getFullYear()} Hybrid Lab. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Mit * markierte Links sind Affiliate-Links.</p>
+        <div>
+          <a href="/impressum">Impressum</a>
+          <a href="/datenschutz">Datenschutz</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

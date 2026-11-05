@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('artikel', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const byCat = new Map<string, typeof posts>();
+for (const p of posts) byCat.set(p.data.category, [...(byCat.get(p.data.category) ?? []), p]);
+---
+<Base title="Alle Artikel" description="Alle Artikel von Hybrid Lab zu Laufen, Rad, Schwimmen, Triathlon und Ausrüstung.">
+  <div class="hero" style="padding-bottom:16px">
+    <div class="eyebrow">Archiv</div>
+    <h1>Alle Artikel</h1>
+  </div>
+  {[...byCat.entries()].map(([cat, list]) => (
+    <section id={cat.toLowerCase()}>
+      <h2 class="section-title">{cat}</h2>
+      <div class="grid">
+        {list.map((p) => (
+          <ArticleCard slug={p.id} title={p.data.title} description={p.data.description} category={p.data.category} date={p.data.date} />
+        ))}
+      </div>
+    </section>
+  ))}
+</Base>

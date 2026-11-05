@@ -1,0 +1,16 @@
+---
+interface Props {
+  slug: string;
+  title: string;
+  description: string;
+  category: string;
+  date: Date;
+}
+const { slug, title, description, category, date } = Astro.props;
+const fmt = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: 'short', year: 'numeric' });
+---
+<a class="card" href={`/artikel/${slug}`}>
+  <div class="meta"><span class="tag">{category}</span><time datetime={date.toISOString()}>{fmt.format(date)}</time></div>
+  <h3>{title}</h3>
+  <p>{description}</p>
+</a>
