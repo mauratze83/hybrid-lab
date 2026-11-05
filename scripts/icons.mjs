@@ -15,14 +15,14 @@ const rounded = (m) => svg(`<rect width="512" height="512" rx="112" fill="${D}"/
 const full = (scale) => svg(`<rect width="512" height="512" fill="${D}"/><g transform="translate(256 256) scale(${scale}) translate(-256 -256)">${mark}</g>`);
 const png = (s, size) => new Resvg(s, { fitTo: { mode: 'width', value: size } }).render().asPng();
 
-writeFileSync('public/favicon.svg', rounded(markSmall));
-writeFileSync('public/apple-touch-icon.png', png(full(0.85), 180));
+writeFileSync('public/favicon.svg', rounded(mark));
+writeFileSync('public/apple-touch-icon.png', png(full(1), 180));
 writeFileSync('public/icon-192.png', png(rounded(mark), 192));
 writeFileSync('public/icon-512.png', png(rounded(mark), 512));
 writeFileSync('public/icon-maskable-512.png', png(full(0.72), 512));
 
 const sizes = [16, 32, 48];
-const imgs = sizes.map((s) => png(rounded(markSmall), s));
+const imgs = sizes.map((s) => png(rounded(mark), s));
 const header = Buffer.alloc(6); header.writeUInt16LE(0, 0); header.writeUInt16LE(1, 2); header.writeUInt16LE(sizes.length, 4);
 let offset = 6 + 16 * sizes.length;
 const dir = sizes.map((s, i) => {
