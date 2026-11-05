@@ -18,10 +18,11 @@ const jsonLd = {
   datePublished: post.data.date.toISOString(),
   dateModified: (post.data.updated ?? post.data.date).toISOString(),
   inLanguage: 'de-DE',
+  image: `https://hybrid-lab.org/og/${post.id}.png`,
   publisher: { '@type': 'Organization', name: 'Hybrid Lab', url: 'https://hybrid-lab.org' },
 };
 ---
-<Base title={post.data.title} description={post.data.description} type="article">
+<Base title={post.data.title} description={post.data.description} type="article" image={`/og/${post.id}.png`}>
   <article class="article">
     <div class="meta">
       <span class="tag">{post.data.category}</span>

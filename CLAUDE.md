@@ -21,3 +21,7 @@ Sprache der Seite: Deutsch, Du-Ansprache, Ich-Perspektive des Betreibers.
 ## Gesundheit & Supplements
 - Nur von der EU zugelassene Health Claims verwenden (HCVO); keine Heil-, Leistungs- oder Wirkversprechen darüber hinaus.
 - Bei Nahrungsergänzungsmitteln immer Hinweis auf BfR-Höchstmengen und ärztliche Abklärung; keine persönlichen Dosierungsempfehlungen.
+
+## Icons & Vorschaubilder
+- Vorschaubilder für Link-Vorschauen entstehen automatisch beim Build (`src/lib/og.ts`, `/og/<slug>.png`) – nichts manuell zu tun.
+- Favicons/App-Icons: nach Logo-Änderung `node scripts/icons.mjs` ausführen und die Dateien in `public/` committen.

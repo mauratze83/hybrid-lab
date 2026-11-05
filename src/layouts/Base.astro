@@ -5,10 +5,12 @@ interface Props {
   title?: string;
   description?: string;
   type?: 'website' | 'article';
+  image?: string; // Pfad zum Vorschaubild, z. B. /og/<slug>.png
 }
 
 const SITE = 'Hybrid Lab';
-const { title, description = 'Laufen, Rad, Schwimmen – ehrliche Trainingserfahrungen und Ausrüstung für Hybrid-Athleten auf dem Weg zum Marathon und Triathlon.', type = 'website' } = Astro.props;
+const { title, description = 'Laufen, Rad, Schwimmen – ehrliche Trainingserfahrungen und Ausrüstung für Hybrid-Athleten auf dem Weg zum Marathon und Triathlon.', type = 'website', image = '/og/default.png' } = Astro.props;
+const ogUrl = new URL(image, Astro.site);
 const fullTitle = title ? `${title} · ${SITE}` : `${SITE} – Training zwischen Marathon und Triathlon`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
@@ -25,7 +27,11 @@ const nav = [
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="Hybrid Lab" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta property="og:type" content={type} />
     <meta property="og:title" content={fullTitle} />
@@ -33,6 +39,14 @@ const nav = [
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content={SITE} />
     <meta property="og:locale" content="de_DE" />
+    <meta property="og:image" content={ogUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={title ?? 'Hybrid Lab'} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogUrl} />
     <meta name="theme-color" content="#14181f" />
   </head>
   <body>
