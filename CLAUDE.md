@@ -26,3 +26,8 @@ Sprache der Seite: Deutsch, Du-Ansprache, Ich-Perspektive des Betreibers.
 - Vorschaubilder für Link-Vorschauen entstehen automatisch beim Build (`src/lib/og.ts`, `/og/<slug>.png`) – nichts manuell zu tun.
 - Logo-Set (Profilbild, Logos, Bildmarke) liegt in `public/brand/`, erzeugt mit `node scripts/brand.mjs`.
 - Favicons/App-Icons: nach Logo-Änderung `node scripts/icons.mjs` ausführen und die Dateien in `public/` committen.
+
+## Kategorien & Navigation
+- Kategorien (Reihenfolge, Intro-Text) zentral in `src/lib/categories.ts`; neue Kategorie dort UND im Schema in `src/content.config.ts` ergänzen.
+- Kategorieseiten `/kategorie/<slug>` und Header-Navigation entstehen automatisch – nur für Kategorien mit mindestens einem Artikel.
+- Startseite zeigt die 5 neuesten Artikel (der neueste groß).
