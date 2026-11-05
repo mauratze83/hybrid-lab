@@ -20,7 +20,7 @@ out('hybrid-lab-icon.svg', icon());
 out('hybrid-lab-icon-1024.png', png(icon(), 1024));
 // 2) Profilbild Instagram/Pinterest (vollflächig, kreis-sicher)
 const profile = svg(1080, 1080, `<rect width="1080" height="1080" fill="${D}"/><g transform="translate(540 540) scale(1.55) translate(-256 -256)">${markPaths(L)}</g>`);
-out('hybrid-lab-profilbild-1080.png', png(profile, 1080));
+out('hybrid-lab-profilbild-dunkel-1080.png', png(profile, 1080));
 // 3) Bildmarke freigestellt (für Overlays auf Fotos/Pins)
 out('hybrid-lab-zeichen-lime.svg', svg(512, 512, markPaths(L)));
 out('hybrid-lab-zeichen-lime-1024.png', png(svg(512, 512, markPaths(L)), 1024));
