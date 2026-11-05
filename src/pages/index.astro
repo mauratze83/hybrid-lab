@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import { getPosts, getActiveCategories } from '../lib/categories';
+import InstaBox from '../components/InstaBox.astro';
 
 const posts = await getPosts();
 const latest = posts.slice(0, 5);
@@ -38,4 +39,6 @@ const cats = await getActiveCategories();
       </a>
     ))}
   </div>
+
+  <InstaBox />
 </Base>

@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 import { getActiveCategories } from '../lib/categories';
+import { INSTAGRAM, INSTAGRAM_URL } from '../../site.config.mjs';
+import InstaIcon from '../components/InstaIcon.astro';
 
 interface Props {
   title?: string;
@@ -60,6 +62,7 @@ const nav = [
             <a href={n.href} aria-current={path === n.href || path.startsWith(n.href + '/') ? 'page' : undefined}>{n.label}</a>
           ))}
         </nav>
+        <a class="social" href={INSTAGRAM_URL} target="_blank" rel="noopener me" aria-label={`Hybrid Lab auf Instagram (@${INSTAGRAM})`} title={`@${INSTAGRAM} auf Instagram`}><InstaIcon size={20} /></a>
       </div>
     </header>
 
@@ -71,6 +74,7 @@ const nav = [
       <div class="wrap">
         <p>© {new Date().getFullYear()} Hybrid Lab. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Mit * markierte Links sind Affiliate-Links.</p>
         <div>
+          <a href={INSTAGRAM_URL} target="_blank" rel="noopener me">Instagram</a>
           <a href="/impressum">Impressum</a>
           <a href="/datenschutz">Datenschutz</a>
         </div>

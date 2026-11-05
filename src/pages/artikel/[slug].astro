@@ -2,6 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
 import { catUrl } from '../../lib/categories';
+import InstaBox from '../../components/InstaBox.astro';
+import { INSTAGRAM_URL } from '../../../site.config.mjs';
 
 export async function getStaticPaths() {
   const posts = await getCollection('artikel', ({ data }) => !data.draft);
@@ -20,7 +22,7 @@ const jsonLd = {
   dateModified: (post.data.updated ?? post.data.date).toISOString(),
   inLanguage: 'de-DE',
   image: `https://hybrid-lab.org/og/${post.id}.png`,
-  publisher: { '@type': 'Organization', name: 'Hybrid Lab', url: 'https://hybrid-lab.org' },
+  publisher: { '@type': 'Organization', name: 'Hybrid Lab', url: 'https://hybrid-lab.org', sameAs: [INSTAGRAM_URL] },
 };
 ---
 <Base title={post.data.title} description={post.data.description} type="article" image={`/og/${post.id}.png`}>
@@ -36,6 +38,7 @@ const jsonLd = {
       <p class="disclosure">Dieser Artikel enthält Affiliate-Links (mit * markiert). Kaufst du darüber, bekomme ich eine kleine Provision – für dich ändert sich der Preis nicht.</p>
     )}
     <div class="prose"><Content /></div>
+    <InstaBox />
   </article>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 </Base>
