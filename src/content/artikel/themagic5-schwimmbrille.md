@@ -6,7 +6,7 @@ category: Schwimmen
 tags: [Schwimmbrille, Schwimmen, Triathlon, Ausrüstung]
 ---
 
-Im Becken nervt kaum etwas so sehr, wie wenn nach 200 Metern Wasser in der Brille steht oder der Druck um die Augen unangenehm wird. Deshalb schwimme ich mit einer **THEMAGIC5**. Das ist eine Brille, die nach einem Scan des eigenen Gesichts gefertigt wird.
+Im Becken nervt kaum etwas so sehr, wie wenn nach 200 Metern Wasser in der Brille steht oder der Druck um die Augen unangenehm wird. Auf Instagram schwimmen alle mit perfekt sitzender Brille durch türkisblaues Wasser. Im Hallenbad stehen dagegen ständig Leute am Beckenrand und kippen Wasser aus ihrer Brille. Deshalb schwimme ich mit einer **THEMAGIC5**. Das ist eine Brille, die nach einem Scan des eigenen Gesichts gefertigt wird.
 
 ## Wie das funktioniert
 

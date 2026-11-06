@@ -7,7 +7,7 @@ tags: [Kettlebell, Krafttraining, Laufen, Triathlon, Athletik]
 affiliate: true
 ---
 
-Krafttraining fällt bei Ausdauersportlern als Erstes weg, wenn die Zeit knapp wird. Dabei ist es einer der besten Hebel: Studien zeigen, dass regelmäßiges Krafttraining die Laufökonomie verbessert. Man braucht also bei gleichem Tempo weniger Energie. Außerdem macht es Sehnen, Muskeln und Gelenke belastbarer.
+Krafttraining fällt bei Ausdauersportlern als Erstes weg, wenn die Zeit knapp wird. Auf Instagram passiert das nie, da wird vor dem Spiegel im perfekt ausgeleuchteten Gym gehoben. Im echten Leben ist es eine Kugel in der Ecke, um die man ein paar Tage lang elegant herumläuft. Dabei ist es einer der besten Hebel: Studien zeigen, dass regelmäßiges Krafttraining die Laufökonomie verbessert. Man braucht also bei gleichem Tempo weniger Energie. Außerdem macht es Sehnen, Muskeln und Gelenke belastbarer.
 
 Ich trainiere dafür mit der **Kettlebell**. Eine Kugelhantel ersetzt erstaunlich viele Geräte, passt in jede Ecke und reicht für ein vollständiges Ganzkörpertraining in 25 Minuten.
 

@@ -6,7 +6,7 @@ category: Laufen
 tags: [Marathon, Trainingsplan, KI, intervals.icu, Claude]
 ---
 
-Für den Düsseldorf Marathon im April 2027 habe ich mir keinen Trainingsplan als PDF heruntergeladen. Ich habe mir mit der KI Claude eine eigene Coach-App gebaut, ohne selbst zu programmieren. Sie heißt **„Düsseldorf 3:30“**, nach meinem Ziel: Marathon in 3:30 Stunden.
+Für den Düsseldorf Marathon im April 2027 habe ich mir keinen Trainingsplan als PDF heruntergeladen. Ich habe mir mit der KI Claude eine eigene Coach-App gebaut, ohne selbst zu programmieren. Sie heißt **„Düsseldorf 3:30“**, nach meinem Ziel: Marathon in 3:30 Stunden. Kein Coach, der mir motivierende Sprachnachrichten schickt, sondern eine Web-App, die mir freundlich, aber gnadenlos anzeigt, welche Einheit ich nicht gelaufen bin.
 
 In diesem Artikel zeige ich dir, was die App kann, wie sie technisch zusammenhängt und wie du dir deine eigene baust, für 5 km bis Marathon.
 

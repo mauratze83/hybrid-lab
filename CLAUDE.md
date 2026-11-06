@@ -3,6 +3,14 @@
 Astro-Website (statisch), deployt per GitHub Actions auf GitHub Pages, Domain hybrid-lab.org (DNS bei united-domains).
 Sprache der Seite: Deutsch, Du-Ansprache, Ich-Perspektive des Betreibers.
 
+## Ton: der Bad Guy mit Augenzwinkern
+Hybrid Lab ist die ehrliche Gegenseite zu Hochglanz-Fitness-Instagram, wo alles schön und mühelos aussieht.
+- Selbstironie und trockener Witz, vor allem in Einstieg, Übergängen und Fazit. Bewährtes Muster: „Auf Instagram sieht das so aus: … Bei mir: …“.
+- Der Witz geht auf Kosten des Hochglanz-Genres oder auf eigene Kosten – nie auf Kosten von Anfängern, Langsamen, Körpern oder namentlich genannten Personen und Marken.
+- Selbstironie nur über echte Erlebnisse des Betreibers; nichts erfinden. Ohne echtes Erlebnis: allgemeine Beobachtung statt Ich-Anekdote.
+- Fakten bleiben ernst: Zahlen, Produktdaten, Sicherheit, Gesundheit, Supplements (HCVO-Regeln unten) und Werbekennzeichnung nicht ins Lächerliche ziehen.
+- Augenzwinkern, kein Zynismus: Jeder Artikel muss am Ende trotzdem echt weiterhelfen. Etwa ein bis drei Pointen pro Artikel reichen.
+
 ## Neuen Artikel anlegen
 - Datei `src/content/artikel/<slug>.md` (Slug = URL, kleingeschrieben, Bindestriche, keine Umlaute).
 - Frontmatter (Schema in `src/content.config.ts`): `title`, `description` (≤170 Zeichen, SEO), `date`, `category`

@@ -7,7 +7,7 @@ tags: [Rad, Rollentraining, Winter, Smart Trainer]
 affiliate: true
 ---
 
-Im Winter fahre ich fast nur noch drinnen: auf der smarten Rolle mit ROUVY. Das ist planbar, wetterunabhängig und lässt sich auch spät abends noch unterbringen. Damit das Rollentraining Spaß macht und nicht zur Schwitz-Tortur wird, braucht es aber ein paar Dinge.
+Im Winter fahre ich fast nur noch drinnen: auf der smarten Rolle mit ROUVY. Das ist planbar, wetterunabhängig und lässt sich auch spät abends noch unterbringen. Auf Instagram sieht Rollentraining aus wie ein Fotoshooting: Designer-Pain-Cave, Neonlicht, trockenes Shirt. In echt ist es ein Ventilator, ein Handtuch und eine Pfütze unter dem Rad. Damit es Spaß macht und nicht zur Schwitz-Tortur wird, braucht es ein paar Dinge.
 
 ## 1. Die Rolle: Direct Drive oder Wheel-on?
 
@@ -75,4 +75,4 @@ Spezielle Indoor-Bikes oder teure Desks brauchst du am Anfang nicht. Dein normal
 
 ## Mein Fazit
 
-Rolle, Lüfter, Matte: Mit diesen drei Dingen wird Wintertraining planbar und erträglich. Strukturierte Einheiten in einer App wie ROUVY sorgen dafür, dass du im Frühjahr fitter auf die Straße kommst, als du im Herbst runtergegangen bist.
+Rolle, Lüfter, Matte: Mit diesen drei Dingen wird Wintertraining planbar und erträglich. Das Neonlicht ist optional. Strukturierte Einheiten in einer App wie ROUVY sorgen dafür, dass du im Frühjahr fitter auf die Straße kommst, als du im Herbst runtergegangen bist.

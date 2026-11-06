@@ -7,7 +7,7 @@ tags: [Supplements, Nahrungsergänzung, Vitamin D, Omega-3, Magnesium]
 affiliate: true
 ---
 
-Neben Training und Ernährung nehme ich ein paar Nahrungsergänzungsmittel. In diesem Artikel zeige ich dir, was ich nehme und wann. Und weil das Thema voller übertriebener Versprechen ist, schreibe ich genauso offen dazu, was die Stoffe nachweislich leisten und wo die Empfehlungen für Höchstmengen liegen.
+Neben Training und Ernährung nehme ich ein paar Nahrungsergänzungsmittel. In diesem Artikel zeige ich dir, was ich nehme und wann. Und weil das Thema voller übertriebener Versprechen ist (Stichwort: die eine Kapsel, die alles verändert, Rabattcode in der Bio), schreibe ich genauso offen dazu, was die Stoffe nachweislich leisten und wo die Empfehlungen für Höchstmengen liegen.
 
 > **Wichtig vorab:** Nahrungsergänzungsmittel ersetzen keine abwechslungsreiche, ausgewogene Ernährung. Ich bin kein Arzt. Was du nimmst, klärst du am besten mit deiner Ärztin oder deinem Arzt ab, idealerweise auf Basis eines Blutbilds. Das gilt besonders, wenn du Medikamente nimmst.
 
@@ -116,6 +116,6 @@ Was heißt das für dich?
 
 ## Fazit
 
-Supplements sind bei mir eine Ergänzung, nicht die Grundlage. Training, Schlaf und eine gute Ernährung machen den Großteil aus. Wenn du etwas ausprobieren willst, sind Vitamin D im Winter und Omega-3 für Wenig-Fisch-Esser die naheliegendsten Kandidaten. Dosierung und Bedarf klärst du aber am besten mit deinem Arzt.
+Supplements sind bei mir eine Ergänzung, nicht die Grundlage. Die Kapsel, die dich schneller macht, habe ich jedenfalls nicht gefunden. Training, Schlaf und eine gute Ernährung machen den Großteil aus. Wenn du etwas ausprobieren willst, sind Vitamin D im Winter und Omega-3 für Wenig-Fisch-Esser die naheliegendsten Kandidaten. Dosierung und Bedarf klärst du aber am besten mit deinem Arzt.
 
 *Quelle für die Höchstmengen: [Verbraucherzentrale, „Mikronährstoffe: Ab wann ist es zu viel?“](https://www.verbraucherzentrale.de/wissen/lebensmittel/nahrungsergaenzungsmittel/mikronaehrstoffe-ab-wann-ist-es-zu-viel-13392) auf Basis der BfR-Empfehlungen.*

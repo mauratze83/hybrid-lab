@@ -7,7 +7,7 @@ tags: [Laufband, Laufen, Indoor, Sportstech]
 affiliate: true
 ---
 
-Neben der Rolle steht bei mir ein **Sportstech sPad1000**. Das ist kein großes Studio-Laufband, sondern ein kompaktes, klappbares 2-in-1-Gerät zum Gehen und für lockeres Laufen. Gerade wenn draußen Glatteis liegt oder abends die Zeit für den Weg nach draußen fehlt, ist es eine praktische Ergänzung.
+Neben der Rolle steht bei mir ein **Sportstech sPad1000**. Wer jetzt an das Reel denkt, in dem jemand mit Panoramablick über der Stadt Intervalle läuft: Nein. Das ist kein großes Studio-Laufband, sondern ein kompaktes, klappbares 2-in-1-Gerät zum Gehen und für lockeres Laufen. Gerade wenn draußen Glatteis liegt oder abends die Zeit für den Weg nach draußen fehlt, ist es eine praktische Ergänzung.
 
 ## Die wichtigsten Daten
 

@@ -8,7 +8,7 @@ affiliate: true
 draft: false
 ---
 
-Der häufigste Fehler beim Laufen im Winter ist nicht zu wenig Kleidung, sondern zu viel. Nach zehn Minuten ist dir warm, du schwitzt in die Schichten, und spätestens wenn du langsamer wirst, frierst du in nassen Klamotten. Meine Regel: **Am Start darf mir kurz kalt sein.** Bei 2 Grad reichen mir dafür fünf Teile.
+Auf Instagram laufen im Winter alle im farblich abgestimmten Outfit durch Puderzucker-Landschaften, natürlich bei Sonnenaufgang. Bei mir ist es meistens dunkel und 2 Grad. Der häufigste Fehler beim Laufen im Winter ist übrigens nicht zu wenig Kleidung, sondern zu viel. Nach zehn Minuten ist dir warm, du schwitzt in die Schichten, und spätestens wenn du langsamer wirst, frierst du in nassen Klamotten. Meine Regel: **Am Start darf mir kurz kalt sein.** Bei 2 Grad reichen mir dafür fünf Teile.
 
 ## 1. Funktions-T-Shirt
 

@@ -6,7 +6,7 @@ category: Rad
 tags: [Rennrad, Rollentraining, ROUVY, Smart Trainer, Triathlon]
 ---
 
-Für den IRONMAN 70.3 in Duisburg muss ich 90 Kilometer Rad fahren, und zwar so, dass danach noch ein Halbmarathon drin ist. Mein Setup dafür ist bewusst schlicht: ein Rennrad, eine smarte Rolle und eine Trainings-App. Im Winter fahre ich fast nur drinnen, ab dem Frühjahr wieder draußen.
+Für den IRONMAN 70.3 in Duisburg muss ich 90 Kilometer Rad fahren, und zwar so, dass danach noch ein Halbmarathon drin ist. Wer auf Instagram Triathlon schaut, könnte meinen, unter einem Zeitfahrrad zum Preis eines Kleinwagens brauchst du gar nicht erst anzutreten. Mein Setup ist bewusst schlicht: ein Rennrad, eine smarte Rolle und eine Trainings-App. Im Winter fahre ich fast nur drinnen, ab dem Frühjahr wieder draußen.
 
 ## Das Rad: Rose Xlite Four
 

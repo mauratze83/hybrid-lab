@@ -9,6 +9,8 @@ affiliate: true
 
 Lange wollte ich einen einzigen Schuh für Training und Rennen. Inzwischen laufe ich zwei, beide von ASICS: den **Megablast** für Tempoläufe und den Renntag, den **Superblast 3** für den ganzen Rest. Beide sind sogenannte Super-Trainer ohne Carbonplatte. Sie fühlen sich trotzdem deutlich unterschiedlich an.
 
+Wenn du Laufschuh-Reels kennst, weißt du: Dort braucht man mindestens fünf Paar, farblich passend zur Kaffeetasse. Mir reichen zwei.
+
 ## Die beiden Schuhe im Überblick
 
 | | Megablast | Superblast 3 |
@@ -65,3 +67,5 @@ Beide Schuhe liegen über 40 mm Sohlenhöhe. Das ist die Grenze, die World Athle
 ## Fazit
 
 Wenn du nur einen Schuh kaufen willst, ist der Superblast 3 der vielseitigere. Wenn du regelmäßig schnell trainierst und einen Schuh für den Renntag suchst, ohne gleich zum Carbon-Racer zu greifen, ergänzt der Megablast ihn sehr gut.
+
+Und falls dir jemand erzählt, dass du für jede Einheit ein eigenes Paar brauchst: Der verdient vermutlich an Schuhen. Ich übrigens auch, über die Links oben. Aber eben nur an zweien.
