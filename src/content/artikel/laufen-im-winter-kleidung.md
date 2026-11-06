@@ -50,11 +50,11 @@ Für die Kleidung habe ich keine bestimmten Modelle, auf die ich schwöre. Wicht
 
 | Teil | Darauf achte ich |
 |---|---|
-| [Funktions-T-Shirt*](amazon-suche:Laufshirt Funktionsshirt Herren) | leicht, schnell trocknend, keine Baumwolle |
-| [Winddichte Laufjacke*](amazon-suche:winddichte Laufjacke Herren leicht) | dünn, winddicht vorne, gern mit Reflektoren |
-| [Lauftights*](amazon-suche:Lauftights Herren lang) | eng anliegend, ohne scheuernde Nähte |
-| [Kurze Laufhose*](amazon-suche:kurze Laufhose Herren Taschen) | mit Taschen für Schlüssel und Handy |
-| [Dünne Laufhandschuhe*](amazon-suche:Laufhandschuhe dünn Touchscreen) | dünn, am besten touchscreenfähig |
+| [Funktions-T-Shirt*](amazon-suche:Laufshirt%20Funktionsshirt%20Herren) | leicht, schnell trocknend, keine Baumwolle |
+| [Winddichte Laufjacke*](amazon-suche:winddichte%20Laufjacke%20Herren%20leicht) | dünn, winddicht vorne, gern mit Reflektoren |
+| [Lauftights*](amazon-suche:Lauftights%20Herren%20lang) | eng anliegend, ohne scheuernde Nähte |
+| [Kurze Laufhose*](amazon-suche:kurze%20Laufhose%20Herren%20Taschen) | mit Taschen für Schlüssel und Handy |
+| [Dünne Laufhandschuhe*](amazon-suche:Laufhandschuhe%20dünn%20Touchscreen) | dünn, am besten touchscreenfähig |
 
 ## Fazit
 
