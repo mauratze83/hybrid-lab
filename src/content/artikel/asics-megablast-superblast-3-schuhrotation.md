@@ -1,6 +1,6 @@
 ---
-title: "ASICS Megablast und Superblast 3: Meine Zwei-Schuh-Rotation"
-description: "Megablast für Tempo und Wettkampf, Superblast 3 für alles andere: Warum ich zwei Schuhe statt einem laufe und worin sie sich unterscheiden."
+title: "ASICS Megablast und Superblast 3: Warum mir zwei Laufschuhe reichen"
+description: "Megablast für Tempo, Superblast 3 für den Rest. Kein Regal voller Paare passend zur Kaffeetasse – nur zwei Schuhe mit klaren Rollen."
 date: 2026-11-05
 category: Laufen
 tags: [Laufschuhe, ASICS, Marathon, Superblast, Megablast]

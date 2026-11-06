@@ -1,6 +1,6 @@
 ---
 title: "Supplements im Ausdauertraining: Was ich nehme und was man wissen sollte"
-description: "Vitamin D3/K2, Vitamin C mit Zink, Q10, Omega-3 und Magnesium: meine tägliche Routine, was die Stoffe laut EU leisten und wo die BfR-Höchstmengen liegen."
+description: "Vitamin D3/K2, Vitamin C mit Zink, Q10, Omega-3, Magnesium: meine Routine, was die Stoffe laut EU leisten, wo die BfR-Höchstmengen liegen – ohne Wunderkapsel."
 date: 2026-11-05
 category: Ernährung
 tags: [Supplements, Nahrungsergänzung, Vitamin D, Omega-3, Magnesium]

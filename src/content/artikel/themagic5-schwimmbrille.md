@@ -1,6 +1,6 @@
 ---
 title: "THEMAGIC5: Eine Schwimmbrille nach Gesichtsscan"
-description: "Beschlagene oder undichte Brillen nerven im Becken. THEMAGIC5 baut Schwimmbrillen nach einem Gesichtsscan per Handy-App. So funktioniert das Prinzip."
+description: "Statt alle zwei Bahnen Wasser aus der Brille zu kippen: THEMAGIC5 baut Schwimmbrillen nach einem Gesichtsscan per Handy-App. So funktioniert das Prinzip."
 date: 2026-11-05
 category: Schwimmen
 tags: [Schwimmbrille, Schwimmen, Triathlon, Ausrüstung]

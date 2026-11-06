@@ -1,6 +1,6 @@
 ---
-title: "„Düsseldorf 3:30“: Mein Marathon-Coach als App, gebaut mit Claude"
-description: "Trainingsplan, Soll/Ist-Abgleich und Workouts direkt auf die Uhr: So funktioniert meine selbstgebaute Coach-App, und so baust du dir deine eigene."
+title: "„Düsseldorf 3:30“: Mein Marathon-Coach ist eine selbstgebaute App"
+description: "Kein Coach mit motivierenden Sprachnachrichten, sondern eine App, die gnadenlos Soll und Ist vergleicht. So funktioniert sie – und so baust du deine."
 date: 2026-11-05
 category: Laufen
 tags: [Marathon, Trainingsplan, KI, intervals.icu, Claude]

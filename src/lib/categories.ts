@@ -2,13 +2,13 @@ import { getCollection } from 'astro:content';
 
 // Reihenfolge = Reihenfolge in der Navigation
 export const CATEGORIES = [
-  { name: 'Laufen', intro: 'Trainingspläne, Laufschuhe und Tipps vom Halbmarathon bis zum Marathon.' },
-  { name: 'Rad', intro: 'Rennrad, Rollentraining und Indoor-Setup – für Grundlage und Triathlon.' },
-  { name: 'Schwimmen', intro: 'Technik, Ausrüstung und Training im Becken und im Freiwasser.' },
-  { name: 'Triathlon', intro: 'Auf dem Weg zum IRONMAN 70.3: Planung, Wechsel und Rennen.' },
-  { name: 'Hybrid-Training', intro: 'Mehrere Sportarten, ein Plan: Periodisierung, Kraft und Alltag.' },
-  { name: 'Ausrüstung', intro: 'Ausrüstung, die ich selbst nutze – mit Daten, Vor- und Nachteilen.' },
-  { name: 'Ernährung', intro: 'Ernährung und Supplements – sachlich, mit Quellen und ohne Wunderversprechen.' },
+  { name: 'Laufen', intro: 'Trainingspläne, Laufschuhe und Tipps vom Halbmarathon bis zum Marathon – ohne Zeitlupe im Sonnenaufgang.' },
+  { name: 'Rad', intro: 'Rennrad, Rollentraining und Indoor-Setup – inklusive der Pfütze unter dem Rad.' },
+  { name: 'Schwimmen', intro: 'Technik, Ausrüstung und Training im Becken und im Freiwasser – für alle, die nicht wie im Werbespot durchs Türkis gleiten.' },
+  { name: 'Triathlon', intro: 'Auf dem Weg zum IRONMAN 70.3: Planung, Wechsel und Rennen – ohne Zeitfahrrad zum Preis eines Kleinwagens.' },
+  { name: 'Hybrid-Training', intro: 'Mehrere Sportarten, ein Plan, ein Vollzeitjob: Periodisierung, Kraft und Alltag.' },
+  { name: 'Ausrüstung', intro: 'Ausrüstung, die ich selbst nutze – mit Daten, Vor- und Nachteilen. Nicht farblich passend zur Kaffeetasse.' },
+  { name: 'Ernährung', intro: 'Ernährung und Supplements – sachlich, mit Quellen und ohne Wunderkapsel mit Rabattcode.' },
 ] as const;
 
 export const catSlug = (name: string) =>

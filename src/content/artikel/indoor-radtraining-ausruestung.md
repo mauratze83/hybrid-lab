@@ -1,6 +1,6 @@
 ---
-title: "Indoor-Radtraining im Winter: Diese Ausrüstung brauchst du wirklich"
-description: "Smarte Rolle, Lüfter, Matte & Co.: Was fürs Wintertraining auf der Rolle nötig ist, was nett ist – und wo du dir das Geld sparen kannst."
+title: "Indoor-Radtraining im Winter: Was du wirklich brauchst (Neonlicht nicht)"
+description: "Rolle, Lüfter, Matte: Was fürs Wintertraining auf der Rolle nötig ist, was nett ist – und wo du dir das Geld für die Insta-Pain-Cave sparst."
 date: 2026-11-05
 category: Ausrüstung
 tags: [Rad, Rollentraining, Winter, Smart Trainer]

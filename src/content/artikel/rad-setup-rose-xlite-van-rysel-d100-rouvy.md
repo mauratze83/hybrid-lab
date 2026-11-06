@@ -1,6 +1,6 @@
 ---
 title: "Mein Rad-Setup für den 70.3: Rose Xlite Four, Van Rysel D100 und ROUVY"
-description: "Ein Carbon-Rennrad, ein günstiger Direct-Drive-Trainer und eine App mit echten Strecken: So sieht mein Radtraining für die Mitteldistanz aus."
+description: "Ein Carbon-Rennrad, ein günstiger Direct-Drive-Trainer und ROUVY: Radtraining für die Mitteldistanz, ohne Zeitfahrrad zum Preis eines Kleinwagens."
 date: 2026-11-05
 category: Rad
 tags: [Rennrad, Rollentraining, ROUVY, Smart Trainer, Triathlon]

@@ -1,6 +1,6 @@
 ---
-title: "Marathon und IRONMAN 70.3 im selben Jahr – so plane ich das"
-description: "Frühjahrsmarathon im April, Mitteldistanz im August: Wie ich Laufen, Rad und Schwimmen über ein Jahr verteile, ohne mich zu verzetteln."
+title: "Marathon und IRONMAN 70.3 im selben Jahr – der Plan ohne Hochglanzfilter"
+description: "Frühjahrsmarathon im April, Mitteldistanz im August, dazwischen Job und Familie: Wie ich das verteile, ohne Eisbad bei Sonnenaufgang."
 date: 2026-11-05
 category: Hybrid-Training
 tags: [Marathon, Triathlon, Trainingsplanung, Periodisierung]

@@ -1,6 +1,6 @@
 ---
-title: "Kettlebell-Training für Läufer und Triathleten: 6 Übungen, 25 Minuten"
-description: "Krafttraining macht Läufer ökonomischer und robuster. Mit einer Kettlebell reichen zwei kurze Einheiten pro Woche: Übungen, Ablauf und das richtige Gewicht."
+title: "Kettlebell-Training für Läufer: 6 Übungen, 25 Minuten, kein Spiegel-Gym"
+description: "Krafttraining macht Läufer ökonomischer und robuster. Eine Kugel, zwei kurze Einheiten pro Woche – der schwerste Teil ist, sie nicht in der Ecke stehen zu lassen."
 date: 2026-11-05
 category: Hybrid-Training
 tags: [Kettlebell, Krafttraining, Laufen, Triathlon, Athletik]

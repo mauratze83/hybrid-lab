@@ -1,6 +1,6 @@
 ---
-title: "Sportstech sPad1000: Ein kompaktes Laufband für zu Hause"
-description: "Kleines Laufband für lockere Kilometer und Walking zu Hause: Was das Sportstech sPad1000 kann und wo seine Grenzen für Läufer liegen."
+title: "Sportstech sPad1000: Kompaktes Laufband statt Penthouse-Panorama"
+description: "Kein Studio-Laufband mit Skyline-Blick, sondern ein kleines Band für lockere Kilometer und Walking zu Hause. Was es kann – und wo für Läufer Schluss ist."
 date: 2026-11-05
 category: Ausrüstung
 tags: [Laufband, Laufen, Indoor, Sportstech]

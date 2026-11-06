@@ -1,6 +1,6 @@
 ---
 title: "Laufen im Winter: Diese 5 Teile reichen mir bei 2 Grad"
-description: "Bei Kälte ziehen die meisten zu viel an. Mit diesen 5 Teilen laufe ich im Winter – inklusive Licht, das im Dunkeln besser ist als eine Stirnlampe."
+description: "Auf Instagram Puderzucker und Sonnenaufgang, bei mir dunkel und 2 Grad. Diese 5 Teile reichen – plus Licht, das besser ist als eine Stirnlampe."
 date: 2026-11-06
 category: Ausrüstung
 tags: [Laufen, Winter, Laufbekleidung, Sicherheit]

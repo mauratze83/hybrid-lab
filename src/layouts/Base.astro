@@ -12,9 +12,9 @@ interface Props {
 }
 
 const SITE = 'Hybrid Lab';
-const { title, description = 'Laufen, Rad, Schwimmen – ehrliche Trainingserfahrungen und Ausrüstung für Hybrid-Athleten auf dem Weg zum Marathon und Triathlon.', type = 'website', image = '/og/default.png' } = Astro.props;
+const { title, description = 'Laufen, Rad, Schwimmen – ehrliche Trainingserfahrungen und Ausrüstung ohne Hochglanzfilter, auf dem Weg zum Marathon und Triathlon.', type = 'website', image = '/og/default.png' } = Astro.props;
 const ogUrl = new URL(image, Astro.site);
-const fullTitle = title ? `${title} · ${SITE}` : `${SITE} – Training zwischen Marathon und Triathlon`;
+const fullTitle = title ? `${title} · ${SITE}` : `${SITE} – Marathon und Triathlon ohne Hochglanzfilter`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const nav = [
