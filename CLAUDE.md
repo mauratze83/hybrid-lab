@@ -11,6 +11,7 @@ Sprache der Seite: Deutsch, Du-Ansprache, Ich-Perspektive des Betreibers.
 
 ## Amazon-Links
 - `[Name*](amazon:ASIN)` oder `[Name*](amazon-suche:suchbegriff)`; Affiliate-Links immer mit * markieren und `affiliate: true` setzen.
+- In Markdown-Links Leerzeichen im Suchbegriff als `%20` schreiben (`[Lauftights*](amazon-suche:Lauftights%20Herren)`), sonst wird kein Link erzeugt. Im HTML-`href` der Produktbox sind Leerzeichen erlaubt. Nach dem Build prüfen, dass jeder `*`-Link in `dist/` ein `href="https://www.amazon.de…tag=…"` hat.
 - Partner-ID zentral in `site.config.mjs` (`AMAZON_TAG`); `plugins/rehype-affiliate.mjs` hängt sie an und setzt rel="sponsored nofollow".
 - Produktbox als HTML: `<div class="product"><div class="p-label">…</div><h4>…</h4><ul>…</ul><a class="btn" href="amazon:ASIN">Ansehen* <small>Amazon</small></a></div>`.
 - Keine Preise oder Amazon-Bilder fest einbauen (Partnerprogramm-Richtlinien).
