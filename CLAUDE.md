@@ -40,3 +40,9 @@ Hybrid Lab ist die ehrliche Gegenseite zu Hochglanz-Fitness-Instagram, wo alles 
 - Kategorien (Reihenfolge, Intro-Text) zentral in `src/lib/categories.ts`; neue Kategorie dort UND im Schema in `src/content.config.ts` ergänzen.
 - Kategorieseiten `/kategorie/<slug>` und Header-Navigation entstehen automatisch – nur für Kategorien mit mindestens einem Artikel.
 - Startseite zeigt die 5 neuesten Artikel (der neueste groß).
+- Zeitstrahl „Road to 70.3“ (Rennen, Status, „Jetzt“-Marker) und die Liste „Im Einsatz, nicht im Regal“ werden in `src/lib/road.ts` gepflegt; nur Ausrüstung eintragen, zu der es einen Erfahrungsbericht gibt.
+
+## Animationen
+- Nur `transform`/`opacity` animieren, UI-Bewegungen unter 300 ms, Kurven `--ease-out`/`--ease-in-out` aus `global.css`.
+- Hover-Effekte nur im Block `@media (hover: hover) and (pointer: fine)`; jede neue Bewegung braucht eine Variante im `prefers-reduced-motion`-Block.
+- Kein Einblenden beim Scrollen, keine Dauerschleifen.

@@ -1,0 +1,60 @@
+---
+// „Auf Instagram vs. Bei mir“ als Umschalter. Inhalt aus dem Winter-Artikel.
+---
+<div class="check" data-filter-check>
+  <div class="check-top"><span class="mono check-label">Filter-Check</span><span class="mono">Versuch: Laufen im Winter</span></div>
+  <div class="seg" role="group" aria-label="Ansicht wählen">
+    <span class="seg-hl" aria-hidden="true"></span>
+    <button class="seg-b on" type="button" aria-pressed="true" data-view="insta">Auf Instagram</button>
+    <button class="seg-b" type="button" aria-pressed="false" data-view="real">Bei mir</button>
+  </div>
+  <div class="panes">
+    <div class="pane" data-pane="insta">
+      <div class="scene scene-insta" aria-hidden="true">
+        <span class="sun"></span>
+        <span class="snow"></span>
+        <span class="chip" style="left:14px;top:14px">06:00 · Sonnenaufgang</span>
+        <span class="chip" style="right:14px;top:52px">Puderzucker-Schnee</span>
+        <span class="chip" style="left:30px;top:96px">Pace: mühelos</span>
+      </div>
+      <p class="pane-t">Sonnenaufgang, Puderzucker, kein Schweißtropfen. Gefilmt aus drei Perspektiven.</p>
+      <p class="pane-s">So sieht Wintertraining im Feed aus.</p>
+    </div>
+    <div class="pane off" data-pane="real" aria-hidden="true" inert>
+      <div class="scene scene-real" aria-hidden="true">
+        <span class="lamp"></span>
+        <div class="readout"><span>DUNKEL</span><span>2 °C</span><span>GEGENWIND</span></div>
+        <svg viewBox="0 0 400 60" preserveAspectRatio="none"><path d="M0 36H120L140 30L160 40L180 18L196 50L214 36H400" /></svg>
+        <div class="readout readout-dim"><span>5 TEILE KLEIDUNG</span><span>1 LICHT</span><span>0 PUDERZUCKER</span></div>
+      </div>
+      <p class="pane-t">Dunkel, 2 Grad, Gegenwind. Fünf Teile reichen – plus ein Licht, das besser ist als eine Stirnlampe.</p>
+      <p class="pane-s"><a class="pane-l" href="/artikel/laufen-im-winter-kleidung">Was davon wirklich hilft <span class="arrow" aria-hidden="true">→</span></a></p>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-filter-check]').forEach((root) => {
+    const buttons = root.querySelectorAll<HTMLButtonElement>('[data-view]');
+    const panes = root.querySelectorAll<HTMLElement>('[data-pane]');
+    const seg = root.querySelector('.seg');
+    buttons.forEach((btn) =>
+      btn.addEventListener('click', () => {
+        const view = btn.dataset.view;
+        seg?.classList.toggle('right', view === 'real');
+        buttons.forEach((b) => {
+          const on = b === btn;
+          b.classList.toggle('on', on);
+          b.setAttribute('aria-pressed', String(on));
+        });
+        panes.forEach((p) => {
+          const on = p.dataset.pane === view;
+          p.classList.toggle('off', !on);
+          p.toggleAttribute('inert', !on);
+          if (on) p.removeAttribute('aria-hidden');
+          else p.setAttribute('aria-hidden', 'true');
+        });
+      }),
+    );
+  });
+</script>

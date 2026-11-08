@@ -51,6 +51,7 @@ const nav = [
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogUrl} />
     <meta name="theme-color" content="#14181f" />
+    <meta name="color-scheme" content="light dark" />
     <meta name="p:domain_verify" content="57b6170fc6cbe0bd14e4e8dd014e5cf2" />
   </head>
   <body>
@@ -65,6 +66,8 @@ const nav = [
         <a class="social" href={INSTAGRAM_URL} target="_blank" rel="noopener me" aria-label={`Hybrid Lab auf Instagram (@${INSTAGRAM})`} title={`@${INSTAGRAM} auf Instagram`}><InstaIcon size={20} /></a>
       </div>
     </header>
+
+    <slot name="hero" />
 
     <main class="wrap">
       <slot />

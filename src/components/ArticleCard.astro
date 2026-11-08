@@ -7,13 +7,22 @@ interface Props {
   category: string;
   date: Date;
   featured?: boolean;
+  no?: number; // Protokollnummer (fortlaufend, ältester Artikel = 1)
 }
-const { slug, title, description, category, date, featured = false } = Astro.props;
+const { slug, title, description, category, date, featured = false, no } = Astro.props;
 const fmt = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: 'short', year: 'numeric' });
+const nr = no !== undefined ? String(no).padStart(2, '0') : undefined;
 ---
-<article class:list={['card', { 'card-featured': featured }]}>
-  <div class="meta"><a class="tag" href={catUrl(category)}>{category}</a><time datetime={date.toISOString()}>{fmt.format(date)}</time></div>
-  <h3><a class="card-link" href={`/artikel/${slug}`}>{title}</a></h3>
-  <p>{description}</p>
-  {featured && <span class="card-cta" aria-hidden="true">Weiterlesen →</span>}
+<article class:list={['card', { 'card-featured': featured, 'card-numbered': featured && nr }]}>
+  {featured && nr && <div class="feat-no" aria-hidden="true">{nr}</div>}
+  <div class="card-body">
+    <div class="meta">
+      <a class="tag" href={catUrl(category)}>{category}</a>
+      {nr && <span class="mono card-no">Protokoll {nr}</span>}
+      <time datetime={date.toISOString()}>{fmt.format(date)}</time>
+    </div>
+    <h3><a class="card-link" href={`/artikel/${slug}`}>{title}</a></h3>
+    <p>{description}</p>
+    <span class="card-cta" aria-hidden="true">{featured ? 'Weiterlesen' : 'Lesen'} <span class="arrow">→</span></span>
+  </div>
 </article>

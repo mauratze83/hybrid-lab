@@ -1,44 +1,90 @@
 ---
 import Base from '../layouts/Base.astro';
 import ArticleCard from '../components/ArticleCard.astro';
-import { getPosts, getActiveCategories } from '../lib/categories';
+import FilterCheck from '../components/FilterCheck.astro';
+import RoadTo703 from '../components/RoadTo703.astro';
 import InstaBox from '../components/InstaBox.astro';
+import { getPosts, getActiveCategories } from '../lib/categories';
+import { GEAR } from '../lib/road';
+import { INSTAGRAM, INSTAGRAM_URL } from '../../site.config.mjs';
 
 const posts = await getPosts();
+const total = posts.length;
 const latest = posts.slice(0, 5);
 const [featured, ...rest] = latest;
 const cats = await getActiveCategories();
+const sports = cats.filter((c) => ['Laufen', 'Rad', 'Schwimmen'].includes(c.name)).length;
 ---
 <Base>
-  <section class="hero">
-    <div class="eyebrow">Marathon · Triathlon · ohne Filter</div>
-    <h1>Training für Leute, die <span class="hl">mehr als eine<svg class="pulse" viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true"><path d="M4 22H150L178 3L216 37L242 22H396" vector-effect="non-scaling-stroke" /></svg></span> Sportart lieben. Ungefiltert.</h1>
-    <p>Hybrid Lab ist mein Trainingslabor auf dem Weg vom Halbmarathon über den Marathon bis zum IRONMAN 70.3. Ohne Sonnenaufgang-Eisbad und Sixpack-Filter: was funktioniert, was nicht – und welche Ausrüstung sich wirklich lohnt.</p>
+  <section class="lab-hero" slot="hero">
+    <div class="wrap lab-hero-grid">
+      <div>
+        <div class="mono lab-eyebrow in" style="--i:0">Laborprotokoll · Marathon · Triathlon · ohne Filter</div>
+        <h1 class="lab-h1 in" style="--i:1">Training für Leute, die <span class="hl">mehr als eine<svg class="ekg" viewBox="0 0 400 40" preserveAspectRatio="none" aria-hidden="true"><path d="M4 22H150L178 3L216 37L242 22H396" /></svg></span> Sportart lieben. Ungefiltert.</h1>
+        <p class="lab-lead in" style="--i:2">Hybrid Lab ist mein Trainingslabor auf dem Weg vom Halbmarathon über den Marathon bis zum IRONMAN 70.3. Ohne Sonnenaufgang-Eisbad und Sixpack-Filter: was funktioniert, was nicht – und welche Ausrüstung sich wirklich lohnt.</p>
+        <div class="cta-row in" style="--i:3">
+          <a class="btn-lime press" href="/artikel">Alle {total} Protokolle lesen <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn-ghost press" href={INSTAGRAM_URL} target="_blank" rel="noopener me">@{INSTAGRAM} folgen</a>
+        </div>
+        <dl class="stats in" style="--i:4">
+          <div><dt class="mono">Artikel</dt><dd>{total}</dd></div>
+          <div><dt class="mono">Sportarten</dt><dd>{sports} + Kraft</dd></div>
+          <div><dt class="mono">Filter</dt><dd>0</dd></div>
+        </dl>
+      </div>
+      <div class="in" style="--i:3"><FilterCheck /></div>
+    </div>
   </section>
 
-  <div class="section-head">
-    <h2 class="section-title">Neueste Artikel</h2>
-    <a class="more" href="/artikel">Alle {posts.length} Artikel →</a>
-  </div>
-  {featured && (
-    <ArticleCard featured slug={featured.id} title={featured.data.title} description={featured.data.description} category={featured.data.category} date={featured.data.date} />
-  )}
-  <div class="grid grid-2">
-    {rest.map((p) => (
-      <ArticleCard slug={p.id} title={p.data.title} description={p.data.description} category={p.data.category} date={p.data.date} />
-    ))}
-  </div>
+  <RoadTo703 />
 
-  <h2 class="section-title">Kategorien</h2>
-  <div class="cat-grid">
-    {cats.map((c) => (
-      <a class="cat" href={c.url}>
-        <span class="cat-name">{c.name}</span>
-        <span class="cat-intro">{c.intro}</span>
-        <span class="cat-count">{c.count} Artikel</span>
-      </a>
-    ))}
-  </div>
+  <section class="sec">
+    <div class="sec-head">
+      <div><div class="mono kicker">Laborbuch</div><h2 class="sec-h">Neueste Protokolle</h2></div>
+      <a class="link-all" href="/artikel">Alle {total} Artikel →</a>
+    </div>
+    <div class="sec-body">
+      {featured && (
+        <ArticleCard featured no={total} slug={featured.id} title={featured.data.title} description={featured.data.description} category={featured.data.category} date={featured.data.date} />
+      )}
+      <div class="grid grid-2">
+        {rest.map((p, i) => (
+          <ArticleCard no={total - 1 - i} slug={p.id} title={p.data.title} description={p.data.description} category={p.data.category} date={p.data.date} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head">
+      <div><div class="mono kicker">Versuchsreihen</div><h2 class="sec-h">Kategorien</h2></div>
+    </div>
+    <div class="cat-grid sec-body">
+      {cats.map((c) => (
+        <a class="cat" href={c.url}>
+          <span class="cat-name">{c.name}</span>
+          <span class="cat-intro">{c.intro}</span>
+          <span class="mono cat-count">{c.count} Artikel</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head">
+      <div><div class="mono kicker">Inventar</div><h2 class="sec-h">Im Einsatz, nicht im Regal</h2></div>
+      <p class="sec-sub">Ausrüstung, die ich selbst nutze – jeweils mit Erfahrungsbericht statt Hochglanzfoto.</p>
+    </div>
+    <div class="gear sec-body">
+      {GEAR.map((g) => (
+        <a class="g" href={`/artikel/${g.slug}`}>
+          <span class="mono g-role">{g.role}</span>
+          <span class="g-name">{g.name}</span>
+          <span class="g-link">Erfahrungsbericht <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+      ))}
+    </div>
+  </section>
 
   <InstaBox />
 </Base>

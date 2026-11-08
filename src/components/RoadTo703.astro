@@ -1,0 +1,27 @@
+---
+import { ROAD } from '../lib/road';
+const n = ROAD.stops.length;
+const edge = 50 / n; // Mitte der ersten/letzten Spalte in %
+const progress = (ROAD.now.after + 0.5) / (n - 1); // Anteil der Strecke bis „Jetzt“
+---
+<section class="sec">
+  <div class="sec-head">
+    <div><div class="mono kicker">Versuchsaufbau 2026/27</div><h2 class="sec-h">Road to 70.3</h2></div>
+    <p class="sec-sub">Vom Halbmarathon über den Marathon zur Mitteldistanz – neben Job und Familie, ohne Eisbad bei Sonnenaufgang.</p>
+  </div>
+  <div class="tl-wrap" style={`--edge:${edge}%;--progress:${progress}`}>
+    <div class="tl-track" aria-hidden="true"><span class="tl-fill"></span></div>
+    <span class="tl-now mono" aria-hidden="true">{ROAD.now.label}</span>
+    <ol class="tl" style={`--n:${n}`}>
+      {ROAD.stops.map((s) => (
+        <li class:list={['stop', s.status]}>
+          <span class="dot" aria-hidden="true"></span>
+          <span class="mono stop-d">{s.date}</span>
+          <span class="stop-t">{s.title}</span>
+          <span class="stop-s">{s.detail}</span>
+          <span class="badge">{s.badge}</span>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
