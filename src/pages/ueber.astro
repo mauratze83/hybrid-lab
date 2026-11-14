@@ -7,6 +7,11 @@ import Base from '../layouts/Base.astro';
     <h1>Ein Labor, kein Hochglanzmagazin</h1>
     <!-- TODO(Manuel): Text prüfen/anpassen – wie viel Persönliches soll öffentlich sein? -->
     <p>Ich trainiere neben einem Vollzeitjob für mehr als eine Sportart. 2026 bin ich den Rhein City Run Halbmarathon in 1:42 gelaufen, im April 2027 steht der Düsseldorf Marathon an, Ende August 2027 der IRONMAN 70.3 in Duisburg.</p>
+    <figure class="poster">
+      <img src="/ueber-road-to-70-3.webp" width="900" height="1352" loading="lazy" decoding="async"
+        alt="Plakat „Road to IRONMAN 70.3“ mit Manuel im Gym: 1,9 km Schwimmen, 90 km Rad, 21,1 km Laufen, Race Day 29.08.2027 in Duisburg" />
+      <figcaption>Das Poster sagt „No Excuses“. Das Labor protokolliert trotzdem jede einzelne.</figcaption>
+    </figure>
     <p>Hybrid Lab ist das Protokoll dieses Experiments: Trainingspläne, die neben Job und Familie funktionieren, ehrliche Eindrücke zu Ausrüstung und die Fehler, die ich unterwegs mache – damit du sie nicht machen musst.</p>
     <p>Wenn du Fitness-Instagram kennst, kennst du die Hochglanz-Version: Sonnenaufgang, Sixpack, alles mühelos. Hier gibt es die andere Seite – mit Augenzwinkern, Zahlen und ohne Filter.</p>
     <p>Und wenn ich gerade nicht trainiere, baue ich an <a href="https://speicherklar.de">Speicherklar</a>: einem Rechner, der dir ehrlich sagt, ob sich ein Batteriespeicher für deine PV-Anlage lohnt. Gleiches Prinzip, anderes Labor.</p>
@@ -14,3 +19,9 @@ import Base from '../layouts/Base.astro';
     <p>Einige Links auf dieser Seite sind Affiliate-Links. Kaufst du darüber, erhalte ich eine kleine Provision, ohne dass sich der Preis für dich ändert. Empfehlungen schreibe ich trotzdem so, wie ich sie selbst einem Trainingspartner geben würde.</p>
   </div>
 </Base>
+
+<style>
+  .poster { max-width: 420px; margin: 2rem auto; }
+  .poster img { display: block; width: 100%; height: auto; border-radius: 12px; }
+  .poster figcaption { margin-top: .6rem; font-size: .9rem; opacity: .75; text-align: center; }
+</style>
